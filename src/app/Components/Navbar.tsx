@@ -6,7 +6,6 @@ import HomeIcon from '@/app/assets/home.png';
 import WorkIcon from '@/app/assets/work.png';
 import BlogIcon from '@/app/assets/blog.png';
 import ContactIcon from '@/app/assets/contact.png';
-import Home from '@/app/home/page';
 
 // Dynamically import components
 const HomePage = dynamic(() => import('@/app/home/page'));
@@ -71,7 +70,7 @@ const Navbar = () => {
 
       {/* Render Active Component */}
       <div className="p-4">
-        {activeComponent === 'home' && <Home />}
+        {activeComponent === 'home' && <HomePage />}
         {activeComponent === 'work' && <WorkPage />}
         {activeComponent === 'blog' && <BlogPage />}
         {activeComponent === 'contact' && <ContactPage />}

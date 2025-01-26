@@ -1,7 +1,4 @@
 import { Playfair_Display } from "next/font/google";
-import Arrow from "@/app/assets/arrow.png";
-import Image from "next/image";
-import ContactPage from "../contact/page";
 import Card from "../Components/Card";
 import BlogCard from "../Components/BlogCard";
 
@@ -25,14 +22,14 @@ export default function HomePage() {
   ];
   const blogsPreviews = [
     {
-      image: "/previews/sugarlicious.pn", // Replace with actual image paths
+      image: "/previews/sugarlicious.png", // Replace with actual image paths
       title: "Machine Learning",
       description:
         "An e-commerce platform with a sleek and user-friendly design.",
       link: "https://sugarlicious-cake-frontend.vercel.app/",
     },
     {
-      image: "/previews/personal.pg",
+      image: "/previews/personal.png",
       title: "Nextjs 15 is Here!",
       description: "A personal porfolio using React.js and Tailwind CSS",
       link: "https://nimesh-portfolio-seven.vercel.app/",
