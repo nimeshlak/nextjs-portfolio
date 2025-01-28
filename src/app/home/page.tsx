@@ -22,14 +22,12 @@ export default function HomePage() {
   ];
   const blogsPreviews = [
     {
-      image: "/previews/sugarlicious.png", // Replace with actual image paths
       title: "Machine Learning",
       description:
         "An e-commerce platform with a sleek and user-friendly design.",
       link: "https://sugarlicious-cake-frontend.vercel.app/",
     },
     {
-      image: "/previews/personal.png",
       title: "Nextjs 15 is Here!",
       description: "A personal porfolio using React.js and Tailwind CSS",
       link: "https://nimesh-portfolio-seven.vercel.app/",
@@ -68,7 +66,6 @@ export default function HomePage() {
               {blogsPreviews.map((preview, index) => (
                 <BlogCard
                   key={index}
-                  image={preview.image}
                   title={preview.title}
                   description={preview.description}
                   link={preview.link}
