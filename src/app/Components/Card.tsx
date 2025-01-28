@@ -20,13 +20,13 @@ const Card: React.FC<CardProps> = ({ image, title, description, link }) => {
         />
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        <h3 className="text-medium font-semibold mb-1">{title}</h3>
+        <p className="text-gray-600 mb-2">{description}</p>
         <Link
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 text-xs hover:underline"
         >
           Visit Website
         </Link>

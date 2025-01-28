@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2  max-w-md mx-auto p-4">
+      <div className="fixed bottom-0 left-1/2 transform -translate-x-1/2  max-w-md mx-auto p-4 z-50">
         <ul className="bg-black flex justify-center space-x-10 p-3 rounded-full shadow-lg w-[300px]">
           <li>
             <button onClick={() => setActiveComponent('home')}>
@@ -69,7 +69,7 @@ const Navbar = () => {
       </div>
 
       {/* Render Active Component */}
-      <div className="p-4">
+      <div className="p-4 pb-24">
         {activeComponent === 'home' && <HomePage />}
         {activeComponent === 'work' && <WorkPage />}
         {activeComponent === 'blog' && <BlogPage />}

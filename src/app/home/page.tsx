@@ -36,8 +36,8 @@ export default function HomePage() {
     },
   ];
   return (
-    <div className="flex flex-col-2">
-      <div className="ml-32 py-32">
+    <div className="flex flex-col lg:flex-row">
+      <div className="lg:ml-10 py-8">
         <div className="mb-5">
           <h1 className="font-semibold text-[24px] text-gray-700">
             Nimesh Lakshitha
@@ -62,9 +62,9 @@ export default function HomePage() {
           </h1>
         </div>
         <div>
-          <h1 className="mt-8 font-semibold py-12">Recent Blogs...</h1>
+          <h1 className="font-semibold py-6">Recent Blogs...</h1>
           <div className="py-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 mt-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
               {blogsPreviews.map((preview, index) => (
                 <BlogCard
                   key={index}
@@ -79,8 +79,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="ml-32 py-32">
-        <h1 className="text-semibold text-gray-600">Recent Works...</h1>
+      <div className="md:ml-[54px] py-32">
+        <h1 className="font-semibold text-lg text-gray-600">Recent Works...</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6 mt-5">
           {websitePreviews.map((preview, index) => (
             <Card

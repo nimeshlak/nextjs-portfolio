@@ -8,25 +8,17 @@ interface CardProps {
   link: string; // Link to the website
 }
 
-const BlogCard: React.FC<CardProps> = ({ image, title, description, link }) => {
+const Card: React.FC<CardProps> = ({ image, title, description, link }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 w-[450px]">
-      <div className="relative h-12">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover hover:scale-125 transition-transform duration-200 ease-in-out cursor-pointer"
-        />
-      </div>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 w-full sm:w-[350px] md:w-[400px] lg:w-[450px]">
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        <h3 className="text-medium font-semibold mb-1">{title}</h3>
+        <p className="text-gray-600 mb-2">{description}</p>
         <Link
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
+          className="text-blue-500 text-xs hover:underline"
         >
           Visit Website
         </Link>
@@ -35,4 +27,4 @@ const BlogCard: React.FC<CardProps> = ({ image, title, description, link }) => {
   );
 };
 
-export default BlogCard;
+export default Card;
